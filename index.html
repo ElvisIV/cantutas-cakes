@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Cantutas Cakes | Pastelería y postres artesanales</title>
+  <meta name="description"
+    content="Descubre Cantutas Cakes, tortas, masitas y postres preparados para hacer especial cada celebración. Consulta nuestros productos y realiza tu pedido por WhatsApp." />
+  <meta name="keywords"
+    content="pastelería, tortas, masitas, postres, pies, cantutas cakes, pedidos whatsapp, pastelería artesanal" />
+  <meta name="author" content="Cantutas Cakes" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cantutas Cakes | Pastelería y postres artesanales" />
+  <meta property="og:description"
+    content="Tortas, masitas y postres preparados con dedicación para hacer especial cada celebración." />
+  <meta property="og:image" content="images/logo.png" />
+  <meta property="og:url" content="https://cantutascakes.com" />
+  <meta property="og:site_name" content="Cantutas Cakes" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cantutas Cakes | Pastelería artesanal" />
+  <meta name="twitter:description" content="Tortas, masitas y postres con sabor artesanal. Pide por WhatsApp." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header" role="banner">
+    <div class="header__inner container">
+      <a href="#inicio" class="header__logo" aria-label="Cantutas Cakes - Inicio">
+        <img src="images/logo.png" alt="Cantutas Cakes" class="logo__img"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <!-- Fallback si no hay imagen -->
+        <div class="logo__fallback" style="display:none;">
+          <span class="logo__icon" aria-hidden="true"><svg class="order-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16v9H4zM8 12V8m8 4V8M12 12V6M4 16q2 3 4 0 2 3 4 0 2 3 4 0 2 3 4 0"/></svg></span>
+          <div class="logo__text">
+            <span class="logo__name">Cantutas Cakes</span>
+            <span class="logo__tagline">Pastelería artesanal</span>
+          </div>
+        </div>
+      </a>
+
+      <nav class="header__nav" id="main-nav" role="navigation" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#productos" class="nav__link">Productos</a></li>
+          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li><a href="#galeria" class="nav__link">Galería</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+
+        <!-- Cart button -->
+        <button class="cart-btn" id="cart-open-btn" aria-label="Ver carrito de pedidos" title="Ver mi pedido">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 0 1-8 0" />
+          </svg>
+          <span class="cart-btn__badge" id="cart-badge" hidden>0</span>
+        </button>
+
+        <a href="https://wa.me/59177227645?text=Hola%2C%20Cantutas%20Cakes%20Quisiera%20consultar%20sobre%20sus%20productos."
+          class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Pedir por WhatsApp">
+          <svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Pedir por WhatsApp
+        </a>
+      </nav>
+
+      <!-- Mobile: cart + hamburger -->
+      <div class="header__mobile-actions">
+        <button class="cart-btn" id="cart-open-btn-mobile" aria-label="Ver carrito" title="Ver mi pedido">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 0 1-8 0" />
+          </svg>
+          <span class="cart-btn__badge" id="cart-badge-mobile" hidden>0</span>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"
+          aria-controls="mobile-nav">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <ul class="mobile-nav__list">
+        <li><a href="#inicio" class="mobile-nav__link" data-close-menu>Inicio</a></li>
+        <li><a href="#productos" class="mobile-nav__link" data-close-menu>Productos</a></li>
+        <li><a href="#nosotros" class="mobile-nav__link" data-close-menu>Nosotros</a></li>
+        <li><a href="#galeria" class="mobile-nav__link" data-close-menu>Galería</a></li>
+        <li><a href="#contacto" class="mobile-nav__link" data-close-menu>Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/59177227645?text=Hola%2C%20Cantutas%20Cakes%20Quisiera%20consultar%20sobre%20sus%20productos."
+        class="btn btn--whatsapp mobile-nav__cta" target="_blank" rel="noopener noreferrer" data-close-menu>
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        Pedir por WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio" aria-label="Sección principal">
+      <div class="hero__image-wrap">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1600&q=80"
+          alt="Elegante torta de celebración decorada con crema y frutas frescas" class="hero__image" loading="eager"
+          fetchpriority="high" />
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="hero__content container">
+        <p class="hero__eyebrow fade-in-up">Cantutas Cakes</p>
+        <h1 class="hero__title fade-in-up" style="--delay: 0.1s">
+          Dulces momentos<br />hechos para celebrar.
+        </h1>
+        <p class="hero__desc fade-in-up" style="--delay: 0.2s">
+          Pasteles y postres preparados con dedicación para hacer especial cada ocasión.
+        </p>
+        <div class="hero__actions fade-in-up" style="--delay: 0.3s">
+          <a href="#productos" class="btn btn--outline-cream btn--lg">Ver productos</a>
+          <a href="https://wa.me/59177227645?text=Hola%2C%20Cantutas%20Cakes%20Quisiera%20consultar%20sobre%20sus%20productos."
+            class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener noreferrer"
+            aria-label="Contactar por WhatsApp">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- ===================== CATEGORÍAS ===================== -->
+    <section class="categories section" id="categorias" aria-labelledby="categories-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="categories-title">Encuentra tu favorito</h2>
+          <p>Explora nuestra selección de productos artesanales</p>
+        </div>
+        <div class="categories__grid" id="categories-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUCTOS ===================== -->
+    <section class="products section section--cream" id="productos" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="products-title">Nuestros productos</h2>
+          <p>Elige tu favorito para ese momento especial.</p>
+        </div>
+
+        <div class="products__controls">
+          <div class="products__search-wrap">
+            <label for="product-search" class="sr-only">Buscar producto</label>
+            <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+            <input type="search" id="product-search" class="products__search" placeholder="Buscar producto…"
+              aria-label="Buscar producto" autocomplete="off" />
+          </div>
+          <div class="products__filters" role="group" aria-label="Filtrar por categoría">
+            <button class="filter-btn filter-btn--active" data-filter="all" id="filter-all">Todos</button>
+            <button class="filter-btn" data-filter="tortas" id="filter-tortas">Tortas</button>
+            <button class="filter-btn" data-filter="masitas" id="filter-masitas">Masitas</button>
+            <button class="filter-btn" data-filter="postres" id="filter-postres">Postres y Pies</button>
+          </div>
+        </div>
+
+        <div class="products__grid" id="products-grid" aria-live="polite" aria-label="Productos"></div>
+
+        <div class="products__more" id="products-more">
+          <button class="btn btn--outline-brand btn--lg" id="load-more-btn" aria-label="Ver más productos">
+            Ver más productos
+          </button>
+        </div>
+
+        <div class="products__empty" id="products-empty" aria-live="polite" hidden>
+          <p>No encontramos productos para tu búsqueda. Intenta con otro término.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CÓMO PEDIR ===================== -->
+    <section class="how-to section" id="como-pedir" aria-labelledby="how-to-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="how-to-title">Así de fácil es hacer tu pedido</h2>
+        </div>
+        <div class="steps__grid">
+          <div class="step fade-in-up">
+            <div class="step__number" aria-hidden="true">01</div>
+            <div class="step__icon" aria-hidden="true"><svg class="order-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 17 4l4 7v10H3zM3 11h18M3 16h18"/></svg></div>
+            <h3 class="step__title">Elige tu producto</h3>
+            <p class="step__desc">Explora nuestras tortas, masitas y postres y agrega lo que quieras al carrito.</p>
+          </div>
+          <div class="step fade-in-up" style="--delay: 0.1s">
+            <div class="step__number" aria-hidden="true">02</div>
+            <div class="step__icon" aria-hidden="true"><svg class="order-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h3l3 12h11l3-9H6"/><circle cx="9" cy="20" r="1"/><circle cx="19" cy="20" r="1"/></svg></div>
+            <h3 class="step__title">Revisa tu carrito</h3>
+            <p class="step__desc">Agrega varios productos y ajusta las cantidades antes de enviar.</p>
+          </div>
+          <div class="step fade-in-up" style="--delay: 0.2s">
+            <div class="step__number" aria-hidden="true">03</div>
+            <div class="step__icon" aria-hidden="true"><svg class="order-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11a9 9 0 0 1-9 9H3l2-5a9 9 0 1 1 16-4Z"/><path d="M8 10h8M8 14h5"/></svg></div>
+            <h3 class="step__title">Envía por WhatsApp</h3>
+            <p class="step__desc">Con un solo toque enviamos todo tu pedido y coordinamos los detalles.</p>
+          </div>
+        </div>
+        <p class="how-to__note">
+          <svg aria-hidden="true" class="note-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="8" x2="12" y2="12" />
+            <line x1="12" y1="16" x2="12.01" y2="16" />
+          </svg>
+          Las tortas y productos especiales requieren pedidos con <strong>48 horas de anticipación</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== NOSOTROS ===================== -->
+    <section class="about section section--cream" id="nosotros" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__image-wrap">
+            <img src="images/logo.png" alt="Cantutas Cakes: pastelería artesanal, logo dorado sobre fondo violeta"
+              class="about__image" loading="lazy" />
+            <div class="about__image-badge" aria-hidden="true">
+              <span>Hecho con</span>
+              <span class="badge-heart">❤️</span>
+              <span>cariño</span>
+            </div>
+          </div>
+          <div class="about__content">
+            <div class="section-title section-title--left">
+              <h2 id="about-title">Hecho con cariño</h2>
+            </div>
+            <p class="about__text">
+              En Cantutas Cakes creemos que cada celebración merece algo especial.
+              Preparamos nuestros productos con dedicación, cuidando cada detalle para
+              acompañar esos momentos que quieres recordar.
+            </p>
+            <p class="about__text">
+              Desde tortas para grandes celebraciones hasta masitas para el día a día,
+              cada producto sale de nuestras manos con el mismo cuidado y amor.
+            </p>
+            <div class="about__values">
+              <div class="value-pill">🌿 Artesanal</div>
+              <div class="value-pill">💛 Con cariño</div>
+              <div class="value-pill">✨ Calidad</div>
+              <div class="value-pill"><svg class="order-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16v9H4zM8 12V8m8 4V8M12 12V6M4 16q2 3 4 0 2 3 4 0 2 3 4 0 2 3 4 0"/></svg> Para celebrar</div>
+            </div>
+            <a href="https://wa.me/59177227645?text=Hola%2C%20Cantutas%20Cakes%20Quisiera%20saber%20m%C3%A1s%20sobre%20sus%20productos."
+              class="btn btn--brand btn--lg" target="_blank" rel="noopener noreferrer">
+              Escríbenos por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALERÍA ===================== -->
+    <section class="gallery section" id="galeria" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="gallery-title">Galería</h2>
+          <p>Una muestra de lo que preparamos con amor</p>
+        </div>
+        <div class="gallery__filters" role="group" aria-label="Filtrar galería">
+          <button class="gallery-filter-btn gallery-filter-btn--active" data-gallery-filter="all">Todos</button>
+          <button class="gallery-filter-btn" data-gallery-filter="tortas">Tortas</button>
+          <button class="gallery-filter-btn" data-gallery-filter="masitas">Masitas</button>
+          <button class="gallery-filter-btn" data-gallery-filter="postres">Postres</button>
+          <button class="gallery-filter-btn" data-gallery-filter="celebraciones">Celebraciones</button>
+        </div>
+        <div class="gallery__masonry" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== OCASIONES ===================== -->
+    <section class="occasions section section--cream" id="ocasiones" aria-labelledby="occasions-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="occasions-title">Un dulce para cada momento</h2>
+          <p>Cualquier celebración es especial con Cantutas Cakes</p>
+        </div>
+        <div class="occasions__grid" id="occasions-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== INFORMACIÓN DE PEDIDOS ===================== -->
+    <section class="order-info section" id="informacion-pedidos" aria-labelledby="order-info-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="order-info-title">Información de pedidos</h2>
+        </div>
+        <div class="order-info__grid">
+          <div class="info-card">
+            <div class="info-card__icon" aria-hidden="true"><svg class="order-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M3 4l3-2m12 0 3 2"/></svg></div>
+            <h3>Anticipación requerida</h3>
+            <p>Las tortas y productos especiales (Brazo gitano, Cheesecake, Pies) requieren <strong>48 horas de
+                anticipación</strong>.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card__icon" aria-hidden="true"><svg class="order-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h3l3 12h11l3-9H6"/><circle cx="9" cy="20" r="1"/><circle cx="19" cy="20" r="1"/></svg></div>
+            <h3>Pedidos múltiples</h3>
+            <p>Usa el carrito para agregar varios productos y envía todo tu pedido en un solo mensaje de WhatsApp.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card__icon" aria-hidden="true"><svg class="order-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16v9H4zM8 12V8m8 4V8M12 12V6M4 16q2 3 4 0 2 3 4 0 2 3 4 0 2 3 4 0"/></svg></div>
+            <h3>Personalización</h3>
+            <p>¿Necesitas algo especial? Cuéntanos por WhatsApp y coordinamos los detalles de tu pedido.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="contact section section--cream" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="section-title">
+            <h2 id="contact-title">Hablemos de tu próximo dulce</h2>
+            <p>Estamos para ayudarte a elegir el producto perfecto para tu celebración.</p>
+          </div>
+          <div class="contact__card">
+            <div class="contact__whatsapp">
+              <div class="contact__wa-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+              </div>
+              <div class="contact__wa-info">
+                <span class="contact__label">WhatsApp</span>
+                <a href="tel:77227645" class="contact__phone">77227645</a>
+              </div>
+            </div>
+            <a href="https://wa.me/59177227645?text=Hola%2C%20Cantutas%20Cakes%20Quisiera%20consultar%20sobre%20sus%20productos."
+              class="btn btn--whatsapp btn--xl contact__btn" target="_blank" rel="noopener noreferrer"
+              id="contact-whatsapp-btn">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Escribir por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="branches section section--cream" id="sucursales" aria-labelledby="branches-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="branches-title">Visítanos en nuestras sucursales</h2>
+          <p>Cuatro sucursales en La Paz: dos en Vino Tinto, una en Periférica y una en Achachicala.</p>
+        </div>
+        <div class="branches__layout">
+          <div id="branch-list" class="branches__list"></div>
+          <div>
+            <div id="branches-map" aria-label="Mapas de sucursales de Cantutas Cakes"></div><p class="branches__status">Estos mapas muestran las dos ubicaciones disponibles. Consulta las demás por WhatsApp.</p>
+            <p id="map-status" class="branches__status" role="status" hidden></p>
+            <noscript>Activa JavaScript para ver el mapa. Vino Tinto: Av. Baltazar de Salas, frente al Banco Sol. Periférica: Av. Gral. Juan José Torrez #270, frente al Colegio Suárez Figueroa.</noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#inicio" class="footer__logo" aria-label="Cantutas Cakes - inicio">
+            <img src="images/logo.png" alt="Cantutas Cakes" class="footer__logo-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="footer__logo-fallback" style="display:none; align-items:center; gap:10px;">
+              <span style="font-size:2rem;" aria-hidden="true"><svg class="order-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16v9H4zM8 12V8m8 4V8M12 12V6M4 16q2 3 4 0 2 3 4 0 2 3 4 0 2 3 4 0"/></svg></span>
+              <div>
+                <span class="footer__name">Cantutas Cakes</span>
+                <span class="footer__tagline">Pastelería artesanal</span>
+              </div>
+            </div>
+          </a>
+          <p class="footer__desc">Dulces momentos hechos para celebrar.</p><div class="social-links" aria-label="Redes sociales"><a href="https://www.facebook.com/profile.php?id=100051045673599" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a><a href="https://www.tiktok.com/@cantutas_cakes" target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <nav class="footer__nav" aria-label="Navegación del pie de página">
+          <h3 class="footer__nav-title">Navegación</h3>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#sucursales">Sucursales</a></li><li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contact">
+          <h3 class="footer__nav-title">Contáctanos</h3>
+          <a href="https://wa.me/59177227645" class="footer__wa" target="_blank" rel="noopener noreferrer"
+            aria-label="WhatsApp 77227645">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            77227645
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="footer-year"></span> Cantutas Cakes. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== CART DRAWER ===================== -->
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Carrito de pedidos" hidden>
+    <div class="cart-drawer__overlay" id="cart-overlay"></div>
+    <div class="cart-drawer__panel">
+      <div class="cart-drawer__header">
+        <div class="cart-drawer__title-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 0 1-8 0" />
+          </svg>
+          <h2 class="cart-drawer__title">Tu pedido</h2>
+          <span class="cart-drawer__count" id="cart-drawer-count"></span>
+        </div>
+        <button class="cart-drawer__close" id="cart-close" aria-label="Cerrar carrito">&times;</button>
+      </div>
+
+      <!-- Cart body -->
+      <div class="cart-drawer__body" id="cart-body">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Cart footer -->
+      <div class="cart-drawer__footer" id="cart-footer" hidden>
+        <div class="cart-total">
+          <span class="cart-total__label">Total estimado</span>
+          <span class="cart-total__amount" id="cart-total-amount">Bs 0</span>
+        </div>
+        <p class="cart-advance-note" id="cart-advance-note" hidden>
+          <svg class="order-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M3 4l3-2m12 0 3 2"/></svg> Tu pedido incluye productos que requieren <strong>48h de anticipación</strong>.
+        </p>
+        <button class="btn btn--whatsapp btn--lg cart-wa-btn" id="cart-wa-btn" aria-label="Enviar pedido por WhatsApp">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Enviar pedido por WhatsApp
+        </button>
+        <button class="cart-clear-btn" id="cart-clear-btn" aria-label="Vaciar carrito">
+          Vaciar carrito
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+    <button class="lightbox__close" id="lightbox-close" aria-label="Cerrar imagen">&times;</button>
+    <div class="lightbox__content">
+      <img src="" alt="" class="lightbox__image" id="lightbox-img" />
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- ===================== PRODUCT MODAL ===================== -->
+  <div class="product-modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-product-name"
+    hidden>
+    <div class="product-modal__overlay" id="modal-overlay"></div>
+    <div class="product-modal__content">
+      <button class="product-modal__close" id="modal-close" aria-label="Cerrar">&times;</button>
+      <div class="product-modal__body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ===================== TOAST ===================== -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span class="toast__icon"><svg class="order-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h3l3 12h11l3-9H6"/><circle cx="9" cy="20" r="1"/><circle cx="19" cy="20" r="1"/></svg></span>
+    <span class="toast__msg" id="toast-msg">Agregado al carrito</span>
+  </div>
+
+  <!-- ===================== FLOATING WA BUTTON ===================== -->
+  <a href="https://wa.me/59177227645?text=Hola%2C%20Cantutas%20Cakes%20Quisiera%20consultar%20sobre%20sus%20productos."
+    class="floating-wa" target="_blank" rel="noopener noreferrer" id="floating-wa" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span class="floating-wa__tooltip">¡Pide aquí!</span>
+  </a>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/cart.js"></script>
+<script src="js/branches.js"></script>
+</body>
+
+</html>
